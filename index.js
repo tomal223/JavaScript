@@ -105,3 +105,37 @@
 
 // console.log(nmbr > 10 && nmbr < 50 || nmbr === 100)
 
+// function greet(name) {
+//     console.log(`Hello ${name}`);
+// }
+
+// greet("John");
+
+// Output: Hello John
+
+// function toCelsius(f) {
+//     return (5 / 9) * (f - 32);
+// }
+
+// let value = toCelsius(222);
+
+// function greetUser(name) {
+//     console.log("Hello, " + name + "!");
+// }
+
+// greetUser("Alice"); // Output: Hello, Alice!
+
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// let result = add(5, 3); // result now holds the value 8
+// console.log(result); // Output: 8
+
+
+// let multiply = function (a, b) {
+//     return a * b;
+// };
+
+// console.log(multiply(4, 3)); // Output: 12
