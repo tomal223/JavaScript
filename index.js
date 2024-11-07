@@ -139,3 +139,87 @@
 // };
 
 // console.log(multiply(4, 3)); // Output: 12
+
+
+// const car = {
+//     name: "Royal Enfield",
+//     model: "Classic 350",
+//     color: "Gun Metal Grey",
+//     weight: "195kg",
+//     start: function () {
+//         return this.name + " has started.";
+//     },
+//     drive: function () {
+//         return this.model + " is running now."
+//     },
+// }
+
+// console.log(car.start());
+
+
+// const student = {
+//     name: "Tawzib Ahmed Tomal",
+//     studentID: 23940,
+//     classRoll: 249,
+//     department: "Management",
+//     session: "2022-23",
+//     college: "Kushtia Govt. College",
+//     address: {
+//         street: "Farakpur Tajmahal Road",
+//         city: "Bheramara",
+//         zilla: "Kushtia",
+//     },
+//     examCenter: {
+//         centerName: "Islamia College",
+//         examCode: 2201,
+//         examHall: "Rabindranath Building",
+//     },
+//     subjectMarks: {
+//         accounting: 80,
+//         marketting: 34,
+//         management: 63,
+//         economy: 45,
+//         history: 45,
+//     }
+// }
+
+// let userName = (fname, lname) => `User's Full Name is ${fname + ' ' + lname}`;
+
+// console.log(student);
+// console.log(student.examCenter);
+// console.log(student.subjectMarks);
+
+// console.log(typeof userName("Tomal", "Ahmed"));
+
+// console.log(typeof student.classRoll);
+// console.log(student.department);
+
+
+// console.log(student.studentID);
+// delete student.studentID;
+// console.log(student.studentID);
+
+
+// let calculator = {
+//     add: function (a, b) {
+//         return a + b;
+//     },
+//     subtract: function (a, b) {
+//         return a - b;
+//     }
+// };
+
+// console.log(calculator.add(5, 3)); // Output: 8
+// console.log(calculator.subtract(10, 4)); // Output: 6
+
+
+// const book = {
+//     title: "Mastering JavaScript",
+//     author: "Tomal",
+//     publisher : {
+//         name : "Zack H.",
+//         location: "Gazipur 2203, Dhaka",
+//     }
+// }
+
+// console.log(book.publisher.name);
