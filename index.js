@@ -209,6 +209,7 @@
 //     }
 // };
 
+
 // console.log(calculator.add(5, 3)); // Output: 8
 // console.log(calculator.subtract(10, 4)); // Output: 6
 
@@ -223,3 +224,105 @@
 // }
 
 // console.log(book.publisher.name);
+
+// function Person(first, last, age, eye, sports) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+//     this.sports = sports;
+// }
+
+// const myFriend = new Person("Tawzib", "Ahmed", 21, "Black", "Cricket");
+
+// console.log(myFriend.sports);
+
+
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+    this.fullName = function () {
+        return this.firstName + " " + this.lastName
+    };
+}
+
+const userName = new Person("Tawzib", "Ahmed", 21, "Brown");
+
+console.log(userName.fullName());
+
+
+function Student(fname, lname, id, age) {
+    this.firstName = fname;
+    this.lastName = lname;
+    this.id = id;
+    this.age = age;
+    this.fullName = fname + " " + lname;
+    this.studentIntro = function () {
+        return `Hi everyone, I am ${this.fullName} a ${age} year old student. My student ID is ${id}.`;
+    }
+}
+
+const studentInfo = new Student("Tawzib", "Ahmed", 114749, 21);
+
+console.log(studentInfo.studentIntro());
+console.log(studentInfo.constructor());
+
+
+function Dog(name, breed) {
+    this.name = name;
+    this.breed = breed;
+}
+
+let dog1 = new Dog("Buddy", "Golden Retriever");
+
+console.log(dog1.constructor);
+
+
+// Animal Constructor
+function Animal(name, species) {
+    this.name = name;
+    this.species = species;
+
+    this.sound = function () {
+        if (this.species === "Dog") {
+            return "Gheu";
+        } else if (this.species === "Cat") {
+            return "Meow";
+        } else if (this.species === "Cow") {
+            return "Moo";
+        } else {
+            return "Unknown sound";
+        }
+    };
+}
+
+let dog = new Animal("test1", "Dog");
+let cat = new Animal("test2", "Cat");
+let cow = new Animal("test3", "Cow");
+
+console.log(dog.name + " says: " + dog.sound());
+console.log(cat.name + " says: " + cat.sound());
+console.log(cow.name + " says: " + cow.sound());
+
+
+let firstName = "Tawzib";
+let lastName = "Ahmed";
+
+let fullName = `${firstName + " " + lastName}`;
+let message = `Welcome, ${fullName}. It's great to have you here!`;
+
+console.log(message);  
+
+let basicText = "This is a multi-line string.\t It can span multiple lines\n without using any escape characters.";
+console.log(basicText);
+
+
+let multiLineString = `
+  lorem ipsum dolor sit amet
+  Lorem deola oat etpal
+  kafol faslo feol
+`;
+
+console.log(multiLineString); 
