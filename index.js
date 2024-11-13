@@ -313,7 +313,7 @@ let lastName = "Ahmed";
 let fullName = `${firstName + " " + lastName}`;
 let message = `Welcome, ${fullName}. It's great to have you here!`;
 
-console.log(message);  
+console.log(message);
 
 let basicText = "This is a multi-line string.\t It can span multiple lines\n without using any escape characters.";
 console.log(basicText);
@@ -325,4 +325,17 @@ let multiLineString = `
   kafol faslo feol
 `;
 
-console.log(multiLineString); 
+console.log(multiLineString);
+ 
+let header = "Template Strings";
+let tags = ["template strings", "javascript", "es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+
+for (const x of tags) {
+    html += `<li>${x}</li>\n`;
+}
+
+html += `</ul>`;
+
+console.log(html);
