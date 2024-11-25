@@ -74,3 +74,72 @@
 // // Extract from index -3 (3rd from the end) to the last element
 // sliced = fruits.slice(-3);
 // console.log(sliced); // ["cherry", "date", "elderberry"]
+
+
+// const fruits = ["apple", "banana", "cherry", "date"];
+// fruits[fruits.length] = "orange";
+// console.log(fruits[fruits.length]);
+// console.log(fruits.includes("Mango"));
+
+
+// let position = fruits.indexOf("cherry");
+// console.log(position);
+
+
+
+
+// console.log(fruits.sort());
+// console.log(fruits.reverse());
+
+
+const numbers = [40, 100, 20, 30, 8, 5];
+
+numbers.sort(function (a, b) {
+    return a - b;
+});
+
+
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const sorted = months.toSorted();
+console.log(sorted);
+
+
+
+
+function isTruthy(value) {
+    return Boolean(value);
+}
+
+console.log(isTruthy(0));      // false
+console.log(isTruthy("hello"));// true
+console.log(isTruthy(null));   // false
+console.log(isTruthy(42));     // true
+
+
+let age = 20;
+let isAdult = age >= 18;
+console.log(isAdult); // true
+console.log(Boolean(10)); // true
+console.log(Boolean(0));  // false
+console.log(Boolean("")); // false
+console.log(Boolean("hello")); // true
+
+
+let x = 10;
+let y = 20;
+
+console.log(x > y);  // false
+console.log(x < y);  // true
+console.log(x === 10); // true
+console.log(y !== 20); // false
+
+
+if (0) {
+    console.log("This won't print because 0 is falsy.");
+}
+
+if ("hello") {
+    console.log("This will print because 'hello' is truthy.");
+}
+
+
