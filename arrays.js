@@ -92,54 +92,71 @@
 // console.log(fruits.reverse());
 
 
-const numbers = [40, 100, 20, 30, 8, 5];
+// const numbers = [40, 100, 20, 30, 8, 5];
 
-numbers.sort(function (a, b) {
-    return a - b;
-});
-
-
-const months = ["Jan", "Feb", "Mar", "Apr"];
-const sorted = months.toSorted();
-console.log(sorted);
+// numbers.sort(function (a, b) {
+//     return a - b;
+// });
 
 
+// const months = ["Jan", "Feb", "Mar", "Apr"];
+// const sorted = months.toSorted();
+// console.log(sorted);
 
 
-function isTruthy(value) {
-    return Boolean(value);
+
+
+// function isTruthy(value) {
+//     return Boolean(value);
+// }
+
+// console.log(isTruthy(0));      // false
+// console.log(isTruthy("hello"));// true
+// console.log(isTruthy(null));   // false
+// console.log(isTruthy(42));     // true
+
+
+// let age = 20;
+// let isAdult = age >= 18;
+// console.log(isAdult); // true
+// console.log(Boolean(10)); // true
+// console.log(Boolean(0));  // false
+// console.log(Boolean("")); // false
+// console.log(Boolean("hello")); // true
+
+
+// let x = 10;
+// let y = 20;
+
+// console.log(x > y);  // false
+// console.log(x < y);  // true
+// console.log(x === 10); // true
+// console.log(y !== 20); // false
+
+
+// if (0) {
+//     console.log("This won't print because 0 is falsy.");
+// }
+
+// if ("hello") {
+//     console.log("This will print because 'hello' is truthy.");
+// }
+
+
+
+// Array Iteration
+
+const num2 = [10, 23, 44, 53, 28];
+
+function myFunction(total, value, index, array) {
+
+    return total + value; 
+    
 }
 
-console.log(isTruthy(0));      // false
-console.log(isTruthy("hello"));// true
-console.log(isTruthy(null));   // false
-console.log(isTruthy(42));     // true
+const n3 = num2.reduceRight(myFunction);
 
+console.log(n3);
 
-let age = 20;
-let isAdult = age >= 18;
-console.log(isAdult); // true
-console.log(Boolean(10)); // true
-console.log(Boolean(0));  // false
-console.log(Boolean("")); // false
-console.log(Boolean("hello")); // true
-
-
-let x = 10;
-let y = 20;
-
-console.log(x > y);  // false
-console.log(x < y);  // true
-console.log(x === 10); // true
-console.log(y !== 20); // false
-
-
-if (0) {
-    console.log("This won't print because 0 is falsy.");
-}
-
-if ("hello") {
-    console.log("This will print because 'hello' is truthy.");
-}
 
 
