@@ -16,3 +16,24 @@ if (myValue) {
 } else {
     console.log("This is false."); // Output: This is false.
 }
+
+
+
+
+let num1 = 15;
+console.log(num1 > 10);
+
+let str1 = "Tawzib";
+let str2 = "Ahmed";
+
+console.log(str1 == str2);
+
+
+let playerPosition = "Openar";
+
+if(playerPosition === "Openar") {
+    console.log("Get ready for opening with the Bat");
+} else {
+    console.log("Take some rest and plan your game");
+    
+}
