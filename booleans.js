@@ -84,7 +84,26 @@ let inputUsername = "admin";
 let inputPassword = "1234";
 
 if (inputUsername === username && inputPassword === password) {
-  console.log("Login successful!");
+    console.log("Login successful!");
 } else {
-  console.log("Invalid username or password.");
+    console.log("Invalid username or password.");
+}
+
+
+let num = 30;
+
+if (num % 3 == 0 && num % 5 == 0) {
+    console.log(`${num} is Divisible by both 3 and 5`);
+} else {
+    console.log(`${num} is Not Divisible by both 3 and 5`);
+}
+
+
+let userAge = 19;
+let hasLicense = false;
+
+if (userAge > 18 && !hasLicense) {
+    console.log(`You can drive the car now.`);
+} else {
+    console.log(`You can not drive the car at the moment.`);
 }
