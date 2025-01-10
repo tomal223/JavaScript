@@ -100,10 +100,10 @@ if (num % 3 == 0 && num % 5 == 0) {
 
 
 let userAge = 19;
-let hasLicense = false;
+let hasLicense = false; 
 
 if (userAge > 18 && !hasLicense) {
     console.log(`You can drive the car now.`);
 } else {
     console.log(`You can not drive the car at the moment.`);
-}
+} 
