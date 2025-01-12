@@ -107,3 +107,14 @@ if (userAge > 18 && !hasLicense) {
 } else {
     console.log(`You can not drive the car at the moment.`);
 } 
+
+let age = 18;
+if (age < 18) {
+    console.log("Underage");
+} else if (age === 18) {
+    console.log("Just eligible");
+} else {
+    console.log("Eligible");
+}
+
+let isEven = (num % 2 === 0) ? "Even" : "Odd";
