@@ -42,7 +42,7 @@
 // console.log(num.toPrecision(2));  
 
 // parseInt(): Converts a string into a whole number (integer). It stops reading once it hits something that isn’t a number.
- 
+
 
 
 

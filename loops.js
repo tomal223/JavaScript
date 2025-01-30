@@ -43,9 +43,34 @@
 // }
 
 
-let i = 1;
-do {
-    console.log(i);
-    i++;
-} while (i <= 5);
+// let i = 1;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i <= 5);
 
+// for (let n = 0; n < array.length; n++) {
+//     const num = array[n];
+
+// }
+
+// let j = 2;
+
+// for (; ; j++) {
+//     if (j > 10) {
+//         break;
+//     } else {
+//         console.log(`Current Number is: ${j}`);
+//     }
+// }
+
+
+let n = 2;
+
+for (; ; n++) {
+    if (n > 10) {
+        break;
+    } else {
+        console.log(`Current Number is: ${n}`);
+    }
+}

@@ -31,14 +31,14 @@ console.log(d2);
 // getTime() 	Get time (milliseconds since January 1, 1970)
 
 
-const da = new Date("October 13, 2014 11:13:00"); 
+const da = new Date("October 13, 2014 11:13:00");
 console.log(da);
 
 let msec = Date.parse("March 21, 2012");
 const dd = new Date(msec);
 console.log(dd);
 
-const d3 = new Date("2015-3-25"); 
+const d3 = new Date("2015-3-25");
 console.log(d3);
 
 const d4 = new Date();
@@ -52,15 +52,33 @@ let month = months[d5.getMonth()];
 const d6 = new Date("2021-03-25");
 console.log(d6.getHours());
 
+/*
+1. Calculate the total amount of milliseconds in a minute.
+2. Calculate the total amount of milliseconds in an hour.
+3. Calculate the total amount of milliseconds in a day.
+4. Calculate the total amount of milliseconds in a year.
+5. Get the current total amount of milliseconds from 1st Jan 1970.
+6. Divide the current total amount milliseconds with the amount of milliseconds in a year.
+7. Now round the divided value to a decimal number.
+*/
+
+
+
+// 
 
 
 // Calculate milliseconds in a year
-const minute = 1000 * 60;
+// 1 sec = 1000ms
+const minute = 1000 * 60; // 1000 ms * 60 = 1 Minute
 const hour = minute * 60;
 const day = hour * 24;
 const year = day * 365;
 
-// Divide Date.now() with a year
-let years = Math.round(Date.now() / year);
+// Divide with a year
+let yearObj = new Date();
 
-console.log(years);
+let yearCount = yearObj.getTime();
+let totalYears = yearCount / year;
+console.log(totalYears);
+
+console.log(Math.round(totalYears));
