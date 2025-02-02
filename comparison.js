@@ -50,4 +50,4 @@ let a = 10, b = 20, c = 34;
 
 let result = a > b ? (a > c ? "A is the largest" : "C is the largest") : (b > c ? "B is the largest" : "C is the largest");
 
-console.log(result);  
+console.log(result);   
