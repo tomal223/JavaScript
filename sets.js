@@ -33,8 +33,8 @@ if (letters instanceof Set) {
         console.log(`${text} = ${value}`);
     });
 }
-
+ 
 for (const x of letters) {
-    text += x;
+    text += x; 
     console.log(`${text}`);
   }
