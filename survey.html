@@ -7,29 +7,10 @@
 </head>
 <body>
     <div id="outcome"></div>
+
+    
     <iframe src="https://schedule.attleboro-dental.implant-info.com/widget/survey/YTMO9Br0lqpshrhNZyQK" style="border:none;width:100%;" scrolling="no" id="YTMO9Br0lqpshrhNZyQK" title="google"></iframe>
     <script src="https://schedule.attleboro-dental.implant-info.com/js/form_embed.js"></script>
-    <script>
-        function getQueryParam(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
-        }
-
-        function mapDesiredOutcome(value) {
-            const mapping = {
-                "Restore my smile": "smile restoration",
-                "Improve my chewing function": "chewing improvement",
-                "Both": "smile restoration & chewing improvement",
-                "Other": "your case"
-            };
-            return mapping[value] || "Unknown outcome";
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const outcome = getQueryParam("desired_outcome");
-            const mappedOutcome = mapDesiredOutcome(outcome);
-            document.getElementById("outcome").innerText = mappedOutcome;
-        });
-    </script>
+ 
 </body>
 </html>
