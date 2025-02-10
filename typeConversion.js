@@ -14,6 +14,3 @@ console.log(Number(d));
 
 
 
-
-
-
