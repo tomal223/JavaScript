@@ -11,6 +11,4 @@ console.log(typeof String(Math.PI));
 let d = new Date();
 
 console.log(Number(d));
-
-
-
+ 
